@@ -1,0 +1,140 @@
+\message{ !name(understanding_machine_learning.tex)}\documentclass{article}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{changepage}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{commath}
+\usepackage{tcolorbox}
+\usepackage{amsthm}
+\usepackage{derivative}
+\usepackage{upgreek}
+\usepackage{centernot}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{inconsolata}
+
+% \pagecolor[rgb]{0.14039215686,0.14039215686,0.14039215686}
+% \color[rgb]{0.83921569,0.83921569,0.83921569}
+
+\definecolor{codegreen}{rgb}{0.4823529412,0.8470588235,0.5607843137}
+\definecolor{codegray}{rgb}{0.25,0.25,0.25}
+\definecolor{codepurple}{rgb}{0.5803921,0.5411764,0.89019607}
+\definecolor{backcolour}{rgb}{0.95, 0.95, 0.95}
+
+\lstdefinestyle{mystyle}
+{
+  backgroundcolor=\color{backcolour},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\graphicspath{ {./images/} }
+
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\newcommand{\nimplies}{\centernot\implies}
+\newcommand{\nequiv}{\centernot\equiv}
+
+\newcommand{\twopartdef}[4]{
+  \left \{
+    \begin{array}{ll}
+      #1 & \mbox{if } #2 \
+           #3 & \mbox{if } #4
+    \end{array}
+  \right.
+}
+
+\newcommand{\threepartdef}[6]{
+  \left \{
+    \begin{array}{lll}
+      #1 & \mbox{if } #2 \
+           #3 & \mbox{if } #4 \
+                #5 & \mbox{if } #6
+    \end{array}
+  \right.
+}
+
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\title{Understanding Machine Learning (Shalev-Shwartz and Ben-David) \\ \large{Course Notes}}
+\author{Alexander Wang (aw576@cornell.edu)}
+\begin{document}
+
+\message{ !name(understanding_machine_learning.tex) !offset(-3) }
+
+\maketitle
+
+\part*{Introduction}
+
+My goal with this document is to read and learn as many chapters of the textbook, ``Understanding Machine Learning'' by Shai Shalev-Shwartz and Shai Ben-David as possible. This textbook covers a gradute level introduction to machine learning and is the primary text used by Cornell University's CS 4780: Introduction to Machine learning, of which I have taken and will be a teaching assistant for in the Fall semester of 2021, and hopefully future semesters. When I took CS 4780, professor Thorsten Joachims provided multiple chapters of this textbook as auxilliary course material to his students, indicating the importance of the concepts in this book to the study of machine learning. In the fall, Professor Kilian Weinberger will be teaching CS 4780, but he will likely still follow closely to what is taught in this book. Seeing that the textbook is meant for a graduate level introduction to the subject, Cornell's undergraduate class did not cover all aspects of this textbook. However, I will do my best to explore even the more complex topics on my own. My objectives are to be a more knowledgable person in the field, and to be the teaching assistant I wish I had while taking the course for the first time.
+
+\part*{Table of Contents}
+\section*{Part 1: Foundations}
+\begin{itemize}
+  \item Chapter 1: Introduction
+  \item Chapter 2: A Gentle Start
+  \item Chapter 3: A Formal Learning Model
+  \item Chapter 4: Learning via Uniform Convergence
+  \item Chapter 5: The Bias-Complexity Trade-off
+  \item Chapter 6: The VC-Dimension
+  \item Chapter 7: Nonuniform learnability
+  \item Chapter 8: The Runtime of Learning
+\end{itemize}
+\section*{Part 2: From Theory to Algorithms}
+\begin{itemize}
+  \item Chapter 9: Linear Predictors
+  \item Chapter 10: Boosting
+  \item Chapter 11: Model Selection and Validation
+  \item Chapter 12: Convex Learning Problems
+  \item Chapter 13: Regularization and Stability
+  \item Chapter 14: Stochastic Gradient Descent
+  \item Chapter 15: Support Vector Machines
+  \item Chapter 16: Kernel Methods
+  \item Chapter 17: Multiclass, Ranking, and Complex Prediction Problems
+  \item Chapter 18: Decision Trees
+  \item Chapter 19: Nearest Neighbor
+  \item Chapter 20: Neural Networks
+\end{itemize}
+\section*{Part 3: Additional Learning Models}
+\begin{itemize}
+  \item Chapter 21: Online Learning
+  \item Chapter 22: Clustering
+  \item Chapter 23: Dimensionality Reduction
+  \item Chapter 24: Generative Models
+  \item Chapter 25: Feature Selection and Generation
+\end{itemize}
+
+\section*{Part 4: Advanced Theory}
+\begin{itemize}
+  \item Chapter 26: Rademacher Complexities
+  \item Chapter 27: Covering Numbers
+  \item Chapter 28: Proof of the Fundametnal Theorem of Learning Theory
+  \item Chapter 29: Multiclass Learnability
+  \item Chapter 30: Compression Bounds
+  \item Chapter 31: PAC-Bayes
+\end{itemize}
+
+
+\part*{Chapter 2: A Gentle Start}
+
+\end{document}
+
+\message{ !name(understanding_machine_learning.tex) !offset(-140) }
